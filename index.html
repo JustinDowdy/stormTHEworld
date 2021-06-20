@@ -9,16 +9,20 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+        <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-dark bg-dark justify-content-center"></nav>
-        <div class="container-fluid-nav">
-            <div class="navbar-header">
-                <span class="navbar-brand mb-0 h1" style="font-size: 36px">Weather Dashboard</span>
+
+    <h1>
+        <nav class="navbar navbar-dark bg-dark justify-content-center"></nav>
+            <div class="container-fluid-nav">
+                <div class="navbar-header">
+                    <span class="navbar-brand mb-0 h1" style="font-size: 36px">Weather Dashboard</span>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </h1>
 
     <div class="container">
         <div class="row">
@@ -33,29 +37,29 @@
                     </form>
                     <br>
                     <div class="list-group" id="city-list">
-                        <!-- List is in javascript -->
+                        <!-- Inside Javascript -->
                     </div>
                 </aside>
-            </div> <!-- 1st main column -->
+            </div> <!-- City info  -->
             <div class="col-md-9" id="city-column" style="visibility: hidden">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="card mt-3">
-                            <div class="card-body" id="weather-data">
-                                <!-- weather data is all in javascript -->
+                            <div class="card-body" id="weatherdata">
+                                <!-- this where the weather data will go (in javascript) -->
                             </div>
                         </div>
-                    </div> <!-- Single sub-column in column 2 -->
-                </div> <!-- 1st row in 2nd column-->
+                    </div> 
+                </div> 
                 <br>
                 <div class="row ml-1">
                     <h2>5-Day Forecast:</h2>
-                </div> <!-- 2nd row in 2nd column -->
-                <div class="row" id="forecast-data">
-                    <!-- 5-day forecast built in javascript -->
-                </div> <!-- 3rd row in 2nd column -->
-            </div> <!-- 2nd main column -->
-        </div> <!-- main row -->
+                </div> 
+                <div class="row" id="5dayforecast">
+                    <!-- this is where the 5-day forecast will go -->
+                </div> 
+            </div> 
+        </div> 
     </div> <!-- end of container -->
 
     <!-- the following is for error messages to pop up -->
